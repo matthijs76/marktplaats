@@ -6,6 +6,7 @@ include('functions.php')
 <head>
 	<title>Registratie nieuwe gebruiker</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Roboto" rel="stylesheet">
 </head>
 <body>
 <div class="header">

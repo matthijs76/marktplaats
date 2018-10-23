@@ -4,6 +4,7 @@
 <head>
 	<title>Registratie</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Roboto" rel="stylesheet">
 </head>
 <body>
 	<div class="header">

@@ -10,10 +10,11 @@ if (!isLoggedIn()) {
 <head>
 	<title>Index</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Roboto" rel="stylesheet">
 </head>
 <body>
 	<div class="header">
-		<h2>User Home Page</h2>
+		<h2>Home Page</h2>
 	</div>
 	<div class="content">
 		<!-- notification message -->

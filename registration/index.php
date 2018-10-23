@@ -8,12 +8,12 @@ if (!isLoggedIn()) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Index</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="header">
-		<h2>Home Page</h2>
+		<h2>User Home Page</h2>
 	</div>
 	<div class="content">
 		<!-- notification message -->
@@ -29,7 +29,7 @@ if (!isLoggedIn()) {
 		<?php endif ?>
 		<!-- logged in user information -->
 		<div class="profile_info">
-			<img src="images/user_profile.png"  >
+			<img src="images/martini.jpg"  >
 
 			<div>
 				<?php  if (isset($_SESSION['user'])) : ?>

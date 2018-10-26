@@ -89,10 +89,10 @@ Diversen<hr>
   <h2>Upload uw object hier!</h2>
   <form action="upload.php" method="POST" enctype="multipart/form-data">
   
-  <input type= "text" name="omschrijving"><hr>
-  <textarea rows="4" cols="50">
+  <input type= "text" name="accordeon menu met categorien uit db"><hr>
+  <textarea rows="4" cols="50" >
 
-</textarea>
+</textarea><br>
   
   <input type="file" name="file"><br>
   <button type="submit" name="submit">Verstuur</button>

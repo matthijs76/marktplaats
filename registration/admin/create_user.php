@@ -2,20 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registration system PHP and MySQL - Create user</title>
+	<title>Registratie systeem - Create user</title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<style>
-		.header {
-			background: #003366;
-		}
+		
 		button[name=register_btn] {
-			background: #003366;
+			background-color: peachpuff;
 		}
 	</style>
 </head>
 <body>
 	<div class="header">
-		<h2>Admin - create user</h2>
+		<h2>Admin - maak gebruiker aan</h2>
 	</div>
 	
 	<form method="post" action="create_user.php">
@@ -47,7 +45,7 @@
 			<input type="password" name="password_2">
 		</div>
 		<div class="input-group">
-			<button type="submit" class="btn" name="register_btn"> + Create user</button>
+			<button type="submit" class="btn" name="register_btn"> + maak gebruiker aan</button>
 		</div>
 	</form>
 </body>

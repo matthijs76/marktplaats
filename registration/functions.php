@@ -14,7 +14,7 @@ if (isset($_POST['register_btn'])) {
 	register();
 }
 
-// REGISTER USER
+
 function register(){
 	// call these variables with the global keyword to make them available in function
 	global $db, $errors, $username, $email;
@@ -26,18 +26,18 @@ function register(){
 	$password_1  =  e($_POST['password_1']);
 	$password_2  =  e($_POST['password_2']);
 
-	// form validation: ensure that the form is correctly filled
+	// form validatie
 	if (empty($username)) { 
-		array_push($errors, "Username is required"); 
+		array_push($errors, "Naam is verplicht"); 
 	}
 	if (empty($email)) { 
-		array_push($errors, "Email is required"); 
+		array_push($errors, "Email is verplicht"); 
 	}
 	if (empty($password_1)) { 
-		array_push($errors, "Password is required"); 
+		array_push($errors, "Password is verplicht"); 
 	}
 	if ($password_1 != $password_2) {
-		array_push($errors, "The two passwords do not match");
+		array_push($errors, "Wachtwoorden komen niet overeen");
 	}
 
 	// register user if there are no errors in the form
@@ -60,7 +60,7 @@ function register(){
 			$logged_in_user_id = mysqli_insert_id($db);
 
 			$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
-			$_SESSION['success']  = "You are now logged in";
+			$_SESSION['success']  = "U bent ingelogd";
 			header('location: index.php');				
 		}
 	}
@@ -120,12 +120,12 @@ function login(){
 	$username = e($_POST['username']);
 	$password = e($_POST['password']);
 
-	// make sure form is filled properly
+	
 	if (empty($username)) {
-		array_push($errors, "Username is required");
+		array_push($errors, "Naam is verplicht");
 	}
 	if (empty($password)) {
-		array_push($errors, "Password is required");
+		array_push($errors, "Wachtwoord is verplicht");
 	}
 
 	// attempt login if no errors on form
@@ -141,16 +141,16 @@ function login(){
 			if ($logged_in_user['user_type'] == 'admin') {
 
 				$_SESSION['user'] = $logged_in_user;
-				$_SESSION['success']  = "You are now logged in";
+				$_SESSION['success']  = "U bent ingelogd";
 				header('location: admin/home.php');		  
 			}else{
 				$_SESSION['user'] = $logged_in_user;
-				$_SESSION['success']  = "You are now logged in";
+				$_SESSION['success']  = "U bent ingelogd";
 
 				header('location: index.php');
 			}
 		}else {
-			array_push($errors, "Wrong username/password combination");
+			array_push($errors, "Combinatie onjuist");
 		}
 	}
 }
